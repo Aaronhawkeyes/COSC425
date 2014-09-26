@@ -1,0 +1,108 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.AYIC.scheduleApp.MyTextView
+                android:id="@+id/emailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="12dp"
+                android:text="@string/emailLabel"
+                android:textColor="#558c89"
+                android:textSize="25sp"
+                customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+            <com.AYIC.scheduleApp.MyEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                customfontdemo:fontName="Quicksand-Regular.ttf" >
+                
+                <requestFocus />
+            </com.AYIC.scheduleApp.MyEditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.AYIC.scheduleApp.MyTextView
+                android:id="@+id/passwordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="12dp"
+                android:text="@string/passwordLabel"
+                android:textColor="#558c89"
+                android:textSize="25sp"
+                customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+            <com.AYIC.scheduleApp.MyEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:ems="10"
+                android:inputType="textPassword"
+                customfontdemo:fontName="Quicksand-Regular.ttf" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.AYIC.scheduleApp.MyTextView
+                android:id="@+id/loginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="@string/loginButton"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                customfontdemo:fontName="Quicksand-Regular.ttf"
+                android:onClick="loginUser" />
+
+            <com.AYIC.scheduleApp.MyTextView
+                android:id="@+id/registerButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="@string/registerButton"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                customfontdemo:fontName="Quicksand-Regular.ttf"
+                android:onClick="registerNewUser" />
+
+        </TableRow>
+        
+</TableLayout>

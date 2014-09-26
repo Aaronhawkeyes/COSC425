@@ -1,0 +1,190 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.AYIC.scheduleApp.RegisterActivity" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.AYIC.scheduleApp.MyTextView
+            android:id="@+id/fNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="12dp"
+            android:text="@string/first_name"
+            android:textColor="#558c89"
+            android:textSize="25sp"
+            customfontdemo:fontName="Quicksand-Regular.ttf"/>
+
+        <com.AYIC.scheduleApp.MyEditText
+            android:id="@+id/fNameEditText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:ems="10"
+            android:hint="@string/first_hint"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#CC808080"
+            android:background="#CCFFFFFF"
+            customfontdemo:fontName="Quicksand-Regular.ttf" >
+                
+            <requestFocus />
+        </com.AYIC.scheduleApp.MyEditText>
+
+    </TableRow>
+
+	<TableRow
+	        android:id="@+id/tableRow2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	
+	        <com.AYIC.scheduleApp.MyTextView
+	            android:id="@+id/lNameTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left"
+	            android:padding="12dp"
+	            android:text="@string/last_name"
+	            android:textColor="#558c89"
+	            android:textSize="25sp"
+	            customfontdemo:fontName="Quicksand-Regular.ttf" />
+	
+	        <com.AYIC.scheduleApp.MyEditText
+	            android:id="@+id/lNameEditText"
+	            android:layout_width="200dp"
+	            android:layout_height="50dp"
+	            android:layout_gravity="left"
+	            android:ems="10"
+	            android:hint="@string/last_hint"
+	            android:inputType="text"
+	            android:textColor="#000000"
+	            android:textColorHint="#CC808080"
+            android:background="#CCFFFFFF"
+	            customfontdemo:fontName="Quicksand-Regular.ttf" >
+	               
+	        </com.AYIC.scheduleApp.MyEditText>
+	
+	    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.AYIC.scheduleApp.MyTextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="12dp"
+            android:text="@string/emailLabel"
+            android:textColor="#558c89"
+            android:textSize="25sp"
+            customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+        <com.AYIC.scheduleApp.MyEditText
+            android:id="@+id/emailTextEdit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#CC808080"
+            android:background="#CCFFFFFF"
+            customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.AYIC.scheduleApp.MyTextView
+            android:id="@+id/passwordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="12dp"
+            android:text="@string/passwordLabel"
+            android:textColor="#558c89"
+            android:textSize="25sp"
+            customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+        <com.AYIC.scheduleApp.MyEditText
+            android:id="@+id/passwordTextEdit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/pass_hint"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#CC808080"
+            android:background="#CCFFFFFF"
+            customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.AYIC.scheduleApp.MyTextView
+            android:id="@+id/confirmTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="12dp"
+            android:text="@string/confirm_password"
+            android:textColor="#558c89"
+            android:textSize="25sp"
+            customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+        <com.AYIC.scheduleApp.MyEditText
+            android:id="@+id/confirmTextEdit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/confirm_hint"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#CC808080"
+            android:background="#CCFFFFFF"
+            customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+            <com.AYIC.scheduleApp.MyTextView
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="3"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:onClick="registerNewUser"
+                android:text="@string/submit"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                customfontdemo:fontName="Quicksand-Regular.ttf" />
+
+    </TableRow>
+</TableLayout>
